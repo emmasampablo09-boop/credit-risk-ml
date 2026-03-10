@@ -9,4 +9,3 @@ class ClienteInput(BaseModel):
     NumSatisfactoryTrades:           float = Field(..., ge=0)
     PercentInstallTrades:            float = Field(..., ge=0, le=100)
     MSinceMostRecentInqexcl7days:    float = Field(..., ge=0)
-    
