@@ -7,14 +7,14 @@ MODEL_PATH = ROOT / 'models' / 'lightgbm_best.pkl'
 
 # Features que usa el modelo
 FEATURES = [
-    'ExternalRiskEstimate',
-    'AverageMInFile',
-    'MSinceOldestTradeOpen',
-    'NumSatisfactoryTrades',
-    'PercentTradesNeverDelq',
-    'MSinceMostRecentInqexcl7days',
-    'MaxDelq2PublicRecLast12M',
-    'MaxDelqEver'
+'NetFractionRevolvingBurden',
+ 'ExternalRiskEstimate',
+ 'AverageMInFile',
+ 'PercentTradesWBalance',
+ 'MSinceOldestTradeOpen',
+ 'NumSatisfactoryTrades',
+ 'PercentInstallTrades',
+ 'MSinceMostRecentInqexcl7days'
 ]
 
 # Métricas del modelo entrenado
