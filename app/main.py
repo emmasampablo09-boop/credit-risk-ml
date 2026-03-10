@@ -8,7 +8,14 @@ app = FastAPI(title='Credit Risk API ',
               description='Predice el riesgo crediticio de un cliente usando un modelo LightGBM entrenado.', 
               version='1.0.0'
               )
-
+@app.get('/')
+def root():
+    return {
+        'proyecto': 'Credit Risk ML API',
+        'version': '1.0.0',
+        'docs': '/docs',
+        'health': '/health'
+    }
 
 ## GET /HEALTH
 @app.get('/health')
