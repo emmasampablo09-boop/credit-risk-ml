@@ -7,14 +7,14 @@ MODEL_PATH = ROOT / 'models' / 'lightgbm_best.pkl'
 
 # Features que usa el modelo
 FEATURES = [
+    'NetFractionRevolvingBurden',
     'ExternalRiskEstimate',
     'AverageMInFile',
+    'PercentTradesWBalance',
     'MSinceOldestTradeOpen',
     'NumSatisfactoryTrades',
-    'PercentTradesNeverDelq',
-    'MSinceMostRecentInqexcl7days',
-    'MaxDelq2PublicRecLast12M',
-    'MaxDelqEver'
+    'PercentInstallTrades',
+    'MSinceMostRecentInqexcl7days'
 ]
 
 # Métricas del modelo entrenado
@@ -23,7 +23,6 @@ METRICS = {
     'gini': 0.5795,
     'ks':   0.4373
 }
-
 
 # Cargar modelo
 def load_model():

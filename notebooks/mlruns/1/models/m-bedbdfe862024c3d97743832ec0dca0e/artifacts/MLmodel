@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/sampa/Downloads/credit_risk_ml/notebooks/mlruns/1/models/m-bedbdfe862024c3d97743832ec0dca0e/artifacts
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 4.6.0
+    model_class: lightgbm.sklearn.LGBMClassifier
+    serialization_format: cloudpickle
+    skops_trusted_types: null
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.10.19
+mlflow_version: 3.10.1
+model_id: m-bedbdfe862024c3d97743832ec0dca0e
+model_size_bytes: 666139
+model_uuid: m-bedbdfe862024c3d97743832ec0dca0e
+prompts: null
+run_id: 14fef244ee524cb3abddec0e8a19fb3c
+utc_time_created: '2026-03-09 03:35:23.097451'
