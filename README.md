@@ -46,6 +46,7 @@ The original HELOC dataset contains 23 features. Through correlation analysis an
 - Final model retains **AUC-ROC 0.79** with only 8 features vs 23
 
 ## Structure of Project
+```
 credit-risk-ml/
 ├── app/
 │   ├── main.py              # API endpoints (health, metrics, predict)
@@ -63,6 +64,9 @@ credit-risk-ml/
 ├── Dockerfile               # Container configuration
 ├── requirements.txt         # Project dependencies
 └── README.md
+```
+
+Pégalo en tu README donde está la sección 📁 Project Structure. ¿Lo agregas? 👀
 
 
 ## API Endpoints
@@ -75,8 +79,7 @@ credit-risk-ml/
 
 
 ## Predict Example
-"""
-json
+```json
 {
     "NetFractionRevolvingBurden": 50,
     "ExternalRiskEstimate": 70,
@@ -87,16 +90,15 @@ json
     "PercentInstallTrades": 40,
     "MSinceMostRecentInqexcl7days": 6
 }
-"""
+```
 
 ## Predict Response Example
-"""
-json
+```json
 {
     "probabilidad": 0.2341,
     "riesgo": "Low"
 }
-"""
+```
 
 ## Author
 Emmanuel Sampablo
