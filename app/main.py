@@ -5,7 +5,7 @@ from app.schemas import ClienteInput
 from app.logger import log_prediction
 
 app = FastAPI(title='Credit Risk API ', 
-              description='Predice el riesgo crediticio de un cliente usando un modelo LightGBM entrenado.', 
+              description='Predicts the credit risk of a client using a trained LightGBM model.', 
               version='1.0.0'
               )
 @app.get('/')
